@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="お問い合わせいただきありがとうございました。">
+    <title>送信完了 | Branch</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .thank-you-section {
+            padding: 120px 0;
+            background: linear-gradient(180deg, var(--bg) 0%, var(--white) 100%);
+            min-height: calc(100vh - 80px);
+            display: flex;
+            align-items: center;
+        }
+
+        .thank-you-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 64px 48px;
+            border-radius: 20px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--gray-light);
+            text-align: center;
+        }
+
+        .check-icon {
+            width: 80px;
+            height: 80px;
+            background: #E8F5E9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            color: var(--primary);
+        }
+
+        .thank-you-title {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: var(--dark);
+        }
+
+        .thank-you-desc {
+            color: var(--gray);
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .btn-back {
+            display: inline-flex;
+            justify-content: center;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .thank-you-container {
+                padding: 48px 24px;
+            }
+
+            .thank-you-title {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" style="text-decoration: none;">
+                <svg width="36" height="36" viewBox="60 -60 680 720" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="headerLineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#1C2B3A;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#4A5A6A;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path
+                        d="M 160,530 C 270,590 720,530 440,280 C 560,180 450,90 375,115 C 245,145 255,440 405,535 C 480,585 482,635 488,660"
+                        fill="none" stroke="url(#headerLineGrad)" stroke-width="76" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <g transform="translate(238,512) rotate(-120)">
+                        <path d="M0,0 C35,-58 105,-58 145,0 C105,58 35,58 0,0 Z" fill="#7CB342" />
+                    </g>
+                </svg>
+                <span>Branch</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html#features">特徴</a>
+                <a href="index.html#how-it-works">使い方</a>
+                <a href="index.html#faq">FAQ</a>
+                <a href="contact.html">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="thank-you-section">
+        <div class="container">
+            <div class="thank-you-container">
+                <div class="check-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 6L9 17l-5-5" />
+                    </svg>
+                </div>
+                <h1 class="thank-you-title">送信完了しました</h1>
+                <p class="thank-you-desc">
+                    お問い合わせいただき、誠にありがとうございます。<br>
+                    内容を確認次第、担当者よりご連絡させていただきます。<br>
+                    今しばらくお待ちくださいませ。
+                </p>
+                <a href="index.html" class="btn-primary btn-back">トップページへ戻る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" style="text-decoration:none;">
+                        <svg width="36" height="36" viewBox="60 -60 680 720" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#C8D8C8;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M 160,530 C 270,590 720,530 440,280 C 560,180 450,90 375,115 C 245,145 255,440 405,535 C 480,585 482,635 488,660"
+                                fill="none" stroke="url(#footerLineGrad)" stroke-width="76" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <g transform="translate(238,512) rotate(-120)">
+                                <path d="M0,0 C35,-58 105,-58 145,0 C105,58 35,58 0,0 Z" fill="#7CB342" />
+                            </g>
+                        </svg>
+                        <span>Branch</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Branch. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

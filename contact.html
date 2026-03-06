@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Branchに関するお問い合わせや、開発者への機能提案はこちらのフォームからご連絡ください。">
+    <title>お問い合わせ・開発者への提案 | Branch</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-section {
+            padding: 80px 0 120px;
+            background: linear-gradient(180deg, var(--bg) 0%, var(--white) 100%);
+            min-height: calc(100vh - 80px);
+            /* header/footer 概算 */
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 48px;
+            border-radius: 20px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--gray-light);
+        }
+
+        .contact-title {
+            font-size: 32px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 12px;
+            color: var(--dark);
+        }
+
+        .contact-desc {
+            text-align: center;
+            color: var(--gray);
+            margin-bottom: 40px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--dark);
+            font-size: 14px;
+        }
+
+        .form-label span.required {
+            color: #E65100;
+            font-size: 12px;
+            margin-left: 6px;
+            background: #FFF3E0;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 16px;
+            color: var(--dark);
+            background-color: var(--white);
+            transition: all 0.3s;
+        }
+
+        .form-control::placeholder {
+            color: #94a3b8;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(124, 179, 66, 0.15);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 700;
+            justify-content: center;
+            margin-top: 16px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gray);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 32px;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 32px 24px;
+            }
+
+            .contact-title {
+                font-size: 26px;
+            }
+
+            .contact-section {
+                padding: 40px 0 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" style="text-decoration: none;">
+                <svg width="36" height="36" viewBox="60 -60 680 720" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="headerLineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#1C2B3A;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#4A5A6A;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path
+                        d="M 160,530 C 270,590 720,530 440,280 C 560,180 450,90 375,115 C 245,145 255,440 405,535 C 480,585 482,635 488,660"
+                        fill="none" stroke="url(#headerLineGrad)" stroke-width="76" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <g transform="translate(238,512) rotate(-120)">
+                        <path d="M0,0 C35,-58 105,-58 145,0 C105,58 35,58 0,0 Z" fill="#7CB342" />
+                    </g>
+                </svg>
+                <span>Branch</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html#features">特徴</a>
+                <a href="index.html#how-it-works">使い方</a>
+                <a href="index.html#faq">FAQ</a>
+                <a href="index.html#cta" class="btn-secondary">トップへ戻る</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- お問い合わせフォーム -->
+    <section class="contact-section">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                トップページへ戻る
+            </a>
+
+            <div class="contact-container">
+                <h1 class="contact-title">お問い合わせ・<br>開発者への提案</h1>
+                <p class="contact-desc">
+                    Branchに関するご不明点、不具合の報告、または<br>「こんな機能がほしい！」などのご提案をお気軽にお送りください。
+                </p>
+
+                <!-- FormSubmitを利用してメールを送信 -->
+                <form method="POST" action="https://formsubmit.co/jasperkazunew190727@gmail.com">
+                    <!-- reCAPTCHAをスキップする場合（オプション）-->
+                    <!-- <input type="hidden" name="_captcha" value="false"> -->
+                    <!-- 送信後の遷移先 -->
+                    <input type="hidden" name="_next" value="https://branch-wallet.com/thank-you.html">
+                    <!-- TODO: 本番環境のURLに置き換えてください -->
+
+                    <div class="form-group">
+                        <label class="form-label" for="name">お名前 <span class="required">必須</span></label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="山田 太郎" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="email">メールアドレス <span class="required">必須</span></label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="category">お問い合わせの種類 <span class="required">必須</span></label>
+                        <select id="category" name="category" class="form-control" required>
+                            <option value="">選択してください</option>
+                            <option value="機能へのご提案・ご要望">機能へのご提案・ご要望</option>
+                            <option value="不具合のご報告">不具合のご報告</option>
+                            <option value="サービスに関するご質問">サービスに関するご質問</option>
+                            <option value="その他のお問い合わせ">その他のお問い合わせ</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="message">内容 <span class="required">必須</span></label>
+                        <textarea id="message" name="message" class="form-control"
+                            placeholder="お問い合わせ内容やご提案を詳しくご記入ください。" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-submit">送信する</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" style="text-decoration:none;">
+                        <svg width="36" height="36" viewBox="60 -60 680 720" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#C8D8C8;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M 160,530 C 270,590 720,530 440,280 C 560,180 450,90 375,115 C 245,145 255,440 405,535 C 480,585 482,635 488,660"
+                                fill="none" stroke="url(#footerLineGrad)" stroke-width="76" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <g transform="translate(238,512) rotate(-120)">
+                                <path d="M0,0 C35,-58 105,-58 145,0 C105,58 35,58 0,0 Z" fill="#7CB342" />
+                            </g>
+                        </svg>
+                        <span>Branch</span>
+                    </a>
+                    <p>グループ収益を、即座に分配</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>プロダクト</h4>
+                        <a href="index.html#features">特徴</a>
+                        <a href="index.html#how-it-works">使い方</a>
+                        <a href="index.html#use-cases">活用例</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>サポート</h4>
+                        <a href="index.html#faq">FAQ</a>
+                        <a href="contact.html">お問い合わせ・開発者への提案</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>運営者</h4>
+                        <a href="terms.html">利用規約</a>
+                        <a href="privacy.html">プライバシーポリシー</a>
+                        <a href="index.html#tokushoho">特定商取引法に基づく表示</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <nav class="footer-bottom-nav">
+                    <a href="contact.html">お問い合わせ・開発者への提案</a>
+                    <a href="terms.html">利用規約</a>
+                    <a href="privacy.html">プライバシーポリシー</a>
+                    <a href="index.html#tokushoho">特定商取引法に基づく表示</a>
+                    <a href="index.html#complaint">苦情・ご意見</a>
+                </nav>
+                <p class="footer-copyright">&copy; 2026 Branch. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

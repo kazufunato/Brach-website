@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Branch - グループでの収益分配を自動化。デジタルコンテンツの売上を、瞬時にメンバーへ。">
+    <title>Branch - グループ収益を、即座に分配</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg width="36" height="36" viewBox="60 -60 680 720" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="headerLineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#1C2B3A;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#4A5A6A;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path
+                        d="M 160,530 C 270,590 720,530 440,280 C 560,180 450,90 375,115 C 245,145 255,440 405,535 C 480,585 482,635 488,660"
+                        fill="none" stroke="url(#headerLineGrad)" stroke-width="76" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <g transform="translate(238,512) rotate(-120)">
+                        <path d="M0,0 C35,-58 105,-58 145,0 C105,58 35,58 0,0 Z" fill="#7CB342" />
+                    </g>
+                </svg>
+                <span>Branch</span>
+            </div>
+            <nav class="nav">
+                <a href="#features">特徴</a>
+                <a href="#team-features">チーム機能</a>
+                <a href="#how-it-works">使い方</a>
+                <a href="#use-cases">活用例</a>
+                <a href="#faq">FAQ</a>
+                <a href="#cta" class="btn-secondary">アプリをダウンロード</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ヒーロー -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    グループ収益を、<br>
+                    <span class="gradient-text">即座に分配</span>
+                </h1>
+                <p class="hero-description">
+                    デジタルコンテンツの売上を、売れた瞬間にメンバーへ自動分配。<br>
+                    透明性が高く、安全なグループ収益管理。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#cta" class="btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 2L13 8L19 9L14.5 13.5L15.5 19.5L10 16.5L4.5 19.5L5.5 13.5L1 9L7 8L10 2Z"
+                                fill="white" />
+                        </svg>
+                        無料で始める
+                    </a>
+                    <a href="#how-it-works" class="btn-outline">仕組みを見る</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="demo-card">
+                            <div class="demo-header">
+                                <div class="demo-avatar"></div>
+                                <div>
+                                    <div class="demo-title">楽曲「Sunset」販売</div>
+                                    <div class="demo-time">2分前</div>
+                                </div>
+                            </div>
+                            <div class="demo-amount">¥1,500</div>
+                            <div class="demo-splits">
+                                <div class="split-item">
+                                    <span>👤 メンバーA</span>
+                                    <span>¥750</span>
+                                </div>
+                                <div class="split-item">
+                                    <span>👤 メンバーB</span>
+                                    <span>¥450</span>
+                                </div>
+                                <div class="split-item">
+                                    <span>👤 メンバーC</span>
+                                    <span>¥300</span>
+                                </div>
+                            </div>
+                            <div class="demo-status">✓ 自動分配完了</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 問題提起 -->
+    <section class="problem">
+        <div class="container">
+            <h2 class="section-title">こんな悩み、ありませんか？</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="56" height="56" rx="16" fill="#FFF3E0" />
+                            <path d="M20 36v-8a8 8 0 1 1 16 0v8" stroke="#E65100" stroke-width="2"
+                                stroke-linecap="round" />
+                            <rect x="16" y="35" width="24" height="4" rx="2" fill="#FF8F00" fill-opacity="0.3"
+                                stroke="#E65100" stroke-width="2" />
+                            <path d="M24 28h8M24 32h5" stroke="#FF8F00" stroke-width="1.8" stroke-linecap="round" />
+                            <circle cx="40" cy="18" r="6" fill="#FFF3E0" stroke="#E65100" stroke-width="2" />
+                            <path d="M40 15v3.5l2 1.5" stroke="#E65100" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>分配計算が面倒</h3>
+                    <p>売上のたびに誰にいくら分配するか<br>手動で計算して送金。立て替えた費用の精算も必要。</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="56" height="56" rx="16" fill="#FFF3E0" />
+                            <circle cx="28" cy="28" r="13" stroke="#E65100" stroke-width="2" />
+                            <path d="M28 22v7" stroke="#E65100" stroke-width="2.5" stroke-linecap="round" />
+                            <circle cx="28" cy="34" r="1.5" fill="#E65100" />
+                            <path d="M22 19l-3-3M34 19l3-3" stroke="#FF8F00" stroke-width="1.8"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>お金の流れが見えない</h3>
+                    <p>本当に正しく分配できているのか、<br>メンバー間で疑問や不信感が生じる</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="56" height="56" rx="16" fill="#FFF3E0" />
+                            <circle cx="28" cy="28" r="12" stroke="#E65100" stroke-width="2" />
+                            <path d="M28 19v9.5l5 3" stroke="#E65100" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M18 14l3 3M38 14l-3 3" stroke="#FF8F00" stroke-width="1.8"
+                                stroke-linecap="round" />
+                            <path d="M22 42l6-3 6 3" stroke="#E65100" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>メンバー間の取り決めを忘れる</h3>
+                    <p>分配ルールも含め、メンバー間の合意を記録しておきたい</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ソリューション -->
+    <section class="solution">
+        <div class="container">
+            <h2 class="section-title">Branchが<span class="gradient-text">すべて解決</span></h2>
+            <p class="section-subtitle">売上の瞬間に、自動で正しく分配。透明性が高く、安全。</p>
+        </div>
+    </section>
+
+    <!-- 特徴 -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="12" fill="#F1F8E9" />
+                            <circle cx="20" cy="14" r="5" stroke="#7CB342" stroke-width="2" fill="#C5E1A5"
+                                fill-opacity="0.5" />
+                            <path d="M20 19v8M12 27v-3h16v3" stroke="#7CB342" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <circle cx="12" cy="29" r="2" fill="#9CCC65" />
+                            <circle cx="20" cy="29" r="2" fill="#9CCC65" />
+                            <circle cx="28" cy="29" r="2" fill="#9CCC65" />
+                        </svg>
+                    </div>
+                    <h3>即時分配</h3>
+                    <p>売上が入った瞬間に、自動的にメンバーそれぞれのアカウントへ送金。待ち時間ゼロ。<br><small
+                            style="color: var(--gray);">※別途登録銀行口座への出金が必要です。出金には出金手数料がかかります。</small></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="12" fill="#F1F8E9" />
+                            <path d="M20 8L10 12v8c0 6.5 4.3 12.6 10 14.8 5.7-2.2 10-8.3 10-14.8v-8L20 8z"
+                                stroke="#7CB342" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15 20l3.5 3.5L25 16" stroke="#9CCC65" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>ノンカストディ（資金非保持）</h3>
+                    <p>運営側で皆さまの資金を管理・保持することは一切ありません。売上は各メンバーの口座へ直接送金され、常に安全に資金が守られます。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="12" fill="#F1F8E9" />
+                            <rect x="9" y="24" width="5" height="8" rx="1.5" fill="#C5E1A5" stroke="#7CB342"
+                                stroke-width="1.5" />
+                            <rect x="17" y="18" width="5" height="14" rx="1.5" fill="#9CCC65" stroke="#7CB342"
+                                stroke-width="1.5" />
+                            <rect x="25" y="12" width="5" height="20" rx="1.5" fill="#7CB342" stroke="#558B2F"
+                                stroke-width="1.5" />
+                            <path d="M11 20l8-6 8-4" stroke="#7CB342" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>高い透明性</h3>
+                    <p>すべての取引履歴をリアルタイムで確認。誰が、いつ、いくら受け取ったか一目瞭然。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="12" fill="#F1F8E9" />
+                            <circle cx="20" cy="20" r="9" stroke="#7CB342" stroke-width="2" />
+                            <path d="M20 14v6l4 2" stroke="#9CCC65" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <circle cx="28" cy="12" r="4" fill="#C5E1A5" stroke="#7CB342" stroke-width="1.5" />
+                            <path d="M27 12h2M28 11v2" stroke="#7CB342" stroke-width="1.2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>柔軟な分配ルール</h3>
+                    <p>均等分配も、割合を自由に設定可能な割合分配も搭載。プロジェクトごとに設定可能。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="12" fill="#F1F8E9" />
+                            <rect x="11" y="7" width="18" height="27" rx="3" stroke="#7CB342" stroke-width="2" />
+                            <path d="M16 7v-1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v1" stroke="#7CB342" stroke-width="1.8"
+                                stroke-linecap="round" />
+                            <path d="M16 17h8M16 21h5" stroke="#9CCC65" stroke-width="1.8" stroke-linecap="round" />
+                            <circle cx="20" cy="27" r="1.5" fill="#7CB342" />
+                        </svg>
+                    </div>
+                    <h3>立替精算を自動化</h3>
+                    <p>メンバーが立て替えた費用は記録され、売上から優先的に精算される仕組みを導入しています。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 使い方 -->
+    <!-- チーム運営 -->
+    <section id="team-features" class="team-features">
+        <div class="container">
+            <h2 class="section-title">お金だけじゃない、<span class="gradient-text">チーム運営も</span></h2>
+            <p class="section-subtitle">タスク管理と承認機能で、グループ内の意思決定・作業進捗をスムーズに。</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="6" width="24" height="28" rx="3" stroke="#7CB342" stroke-width="2" />
+                            <path d="M15 6v-1a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v1" stroke="#7CB342" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M13 16l2.5 2.5L20 14" stroke="#9CCC65" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M24 16h3" stroke="#7CB342" stroke-width="1.8" stroke-linecap="round" />
+                            <path d="M13 22l2.5 2.5L20 20" stroke="#9CCC65" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M24 22h3" stroke="#7CB342" stroke-width="1.8" stroke-linecap="round" />
+                            <path d="M13 28h14" stroke="#C5E1A5" stroke-width="1.8" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>タスク管理</h3>
+                    <p>プロジェクトに必要な作業をタスクとして登録・割り当て。誰が何をするか、いつまでにやるかを明確にして、チームの動きを整理します。タスクごとに報酬を設定可能。達成されると、指定金額分を利益から自動で分配されます。
+                    </p>
+                    <ul class="team-feature-list">
+                        <li>タスクを作成してメンバーにアサイン</li>
+                        <li>期限・優先度を設定して進捗を見える化</li>
+                        <li>完了・未完了をリアルタイムで確認</li>
+                        <li>プロジェクトごとにタスクを整理・管理</li>
+                    </ul>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4L8 9v10c0 7.5 5.2 14.5 12 17 6.8-2.5 12-9.5 12-17V9L20 4z" stroke="#7CB342"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14 20l4 4 8-8" stroke="#9CCC65" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>承認機能</h3>
+                    <p>経費申請や重要な意思決定を、グループメンバー全員（または指定メンバー）の承認フローで管理。透明性の高いグループ運営を実現します。メンバー間の合意はアプリ内で記録され、いつでも確認可能です。
+                    </p>
+                    <ul class="team-feature-list">
+                        <li>経費申請をメンバーが承認・否認</li>
+                        <li>承認状況をリアルタイムで確認</li>
+                        <li>承認者・否認者・理由を記録として保存</li>
+                        <li>不正な支出・独断的な決定を未然に防止</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 使い方 -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">使い方はシンプル</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>グループを作成</h3>
+                        <p>アプリでグループを作成し、メンバーを招待。数タップで完了。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>プロジェクトを作成</h3>
+                        <p>イベントや制作する商品ごとにプロジェクトを作りましょう。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>分配ルールを設定</h3>
+                        <p>均等分配（50%:50%）か、カスタム分配（60%:30%:10%）を選択。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>商品を販売</h3>
+                        <p>デジタルコンテンツ（音楽、動画、電子書籍等）の決済リンクを共有。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>自動分配！</h3>
+                        <p>売上が入った瞬間、設定した比率で自動的にメンバーへ送金完了。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>銀行口座に出金</h3>
+                        <p>自動で分配された金額を月末にまとめて出金。登録した銀行口座に振り込みます。<br><small
+                                style="color: var(--gray);">＊振り込みの際に出金手数料が必要となります</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 資金の流れ -->
+    <section class="flow">
+        <div class="container">
+            <h2 class="section-title">資金の流れ</h2>
+            <div class="flow-diagram">
+                <div class="flow-step">
+                    <div class="flow-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="14" fill="#F1F8E9" />
+                            <path d="M14 15h3l2.4 11.4a2 2 0 0 0 2 1.6h9.6a2 2 0 0 0 2-1.6L35 20H18" stroke="#7CB342"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="21" cy="31" r="1.5" fill="#7CB342" />
+                            <circle cx="31" cy="31" r="1.5" fill="#7CB342" />
+                            <path d="M22 22h8M22 26h5" stroke="#9CCC65" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="flow-label">顧客が購入</div>
+                    <div class="flow-desc">デジタルコンテンツをクレジットカード決済</div>
+                </div>
+                <div class="flow-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12h14M13 6l6 6-6 6" stroke="#7CB342" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="14" fill="#F1F8E9" />
+                            <path
+                                d="M24 16a1.5 1.5 0 0 1 1.5 1.5v1.2a6 6 0 0 1 1.8.75l.85-.85a1.5 1.5 0 0 1 2.1 2.1l-.85.85c.32.57.57 1.17.75 1.8h1.2a1.5 1.5 0 0 1 0 3h-1.2a6 6 0 0 1-.75 1.8l.85.85a1.5 1.5 0 0 1-2.1 2.1l-.85-.85a6 6 0 0 1-1.8.75v1.2a1.5 1.5 0 0 1-3 0v-1.2a6 6 0 0 1-1.8-.75l-.85.85a1.5 1.5 0 0 1-2.1-2.1l.85-.85a6 6 0 0 1-.75-1.8h-1.2a1.5 1.5 0 0 1 0-3h1.2c.18-.63.43-1.23.75-1.8l-.85-.85a1.5 1.5 0 0 1 2.1-2.1l.85.85c.57-.32 1.17-.57 1.8-.75v-1.2A1.5 1.5 0 0 1 24 16z"
+                                stroke="#7CB342" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="24" cy="24" r="2.5" fill="#9CCC65" />
+                        </svg>
+                    </div>
+                    <div class="flow-label">自動計算</div>
+                    <div class="flow-desc">設定された分配ルールに基づき計算</div>
+                </div>
+                <div class="flow-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12h14M13 6l6 6-6 6" stroke="#7CB342" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="14" fill="#F1F8E9" />
+                            <rect x="13" y="18" width="22" height="15" rx="2" stroke="#7CB342" stroke-width="2" />
+                            <path d="M13 23h22" stroke="#7CB342" stroke-width="2" />
+                            <path d="M17 28h4M25 28h3" stroke="#9CCC65" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M28 13l4 4-4 4" stroke="#7CB342" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M32 17H22" stroke="#7CB342" stroke-width="1.8" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="flow-label">即時送金</div>
+                    <div class="flow-desc">各メンバーのStripe口座へ自動送金</div>
+                </div>
+                <div class="flow-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12h14M13 6l6 6-6 6" stroke="#7CB342" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="14" fill="#F1F8E9" />
+                            <path d="M14 34h20M16 34v-9M20 34v-9M24 34v-9M28 34v-9M32 34v-9" stroke="#7CB342"
+                                stroke-width="2" stroke-linecap="round" />
+                            <path d="M12 25l12-9 12 9" stroke="#7CB342" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M21 22h6" stroke="#9CCC65" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="flow-label">銀行へ出金</div>
+                    <div class="flow-desc">各自で銀行口座へ出金（月次自動）</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ユースケース -->
+    <section id="use-cases" class="use-cases">
+        <div class="container">
+            <h2 class="section-title">こんなグループにおすすめ</h2>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-emoji">🎵</div>
+                    <h3>音楽クリエイター</h3>
+                    <p>共同制作した楽曲の売上を、作曲・編曲・歌唱の貢献度に応じて自動分配。</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-emoji">🎨</div>
+                    <h3>デジタルアート</h3>
+                    <p>アーティスト・デザイナー・マーケターのチームで、NFTやデジタル作品の収益を分配。</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-emoji">📚</div>
+                    <h3>電子書籍・コンテンツ</h3>
+                    <p>著者・編集者・イラストレーターでの共同出版。売上を即座に分配。</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-emoji">🎬</div>
+                    <h3>動画クリエイター</h3>
+                    <p>撮影・編集・音楽制作のチームで、有料動画の収益を自動分配。</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-emoji">🎮</div>
+                    <h3>ゲーム開発</h3>
+                    <p>インディーゲーム開発チームで、売上を開発メンバーに即時分配。</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-emoji">📱</div>
+                    <h3>アプリ開発</h3>
+                    <p>開発者・デザイナー・マーケターで、アプリ内課金の収益を分配。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">よくある質問</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>アプリ内に売上金は蓄積されますか？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>一時的に蓄積されますが、長期的に保有することはできません。Branchはノンカストディ（資金非保持）設計を採用しています。運営側で皆さまの預かり金を保持することはないため、極めて高い安全性が確保されています。売上は瞬時にメンバー各自に分配され、１ヶ月を目処に自動で登録銀行口座に出金される設計になっております。
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>どんな商品・サービスが販売できますか？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>デジタルコンテンツ（音楽、動画、電子書籍、イラスト等）の販売が対象です。サービスの拡大によって扱えるコンテンツは拡充する予定です。ただしアダルトコンテンツは販売できません。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>手数料はかかりますか？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>売上にかかるプラットフォーム手数料と月に最低１度銀行口座への出金の際に必要となる出金手数料の２つが存在します。クレジットカードなどの決済手数料はプラットフォーム手数料に組み込まれています。具体的な料金については、アプリ内でご確認ください。
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>分配のタイミングは？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>売上が発生した瞬間に、指定の分配プロセスに基づき自動的に分配されます。手動での分配ボタンを押す必要はありません。各メンバーへの分配は即座に実行され、銀行口座への出金は毎月自動的に行われます。
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>商品の販売はどのようにするのですか。</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>本アプリのプロジェクトページ内に商品を登録できるページを用意しております。そちらに商品を登録すると販売用のリンクが有効になります。発行されたリンクをSNSや様々なプラットフォームに掲載するだけで販売が可能です。
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>分配ルールは後から変更できますか？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、いつでも変更可能です。ただし、重要な変更についてはメンバーの承認が必要になる場合があります。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2 class="cta-title">今すぐ始めよう</h2>
+            <p class="cta-description">グループでの収益分配を、もっとシンプルに、もっと透明に。</p>
+            <div class="cta-buttons">
+                <div class="store-button-wrapper">
+                    <a href="#" class="store-button store-button--disabled" onclick="return false;"
+                        aria-disabled="true">
+                        <!-- Apple logo SVG -->
+                        <svg width="24" height="26" viewBox="0 0 384 512" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+                        </svg>
+                        <div>
+                            <div class="store-text">Download on the</div>
+                            <div class="store-name">App Store</div>
+                        </div>
+                    </a>
+                    <span class="store-coming-soon-badge">準備中</span>
+                </div>
+                <div class="store-button-wrapper">
+                    <a href="#" class="store-button store-button--disabled" onclick="return false;"
+                        aria-disabled="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.6 3 21.09 3 20.5Z"
+                                fill="currentColor" />
+                            <path d="M16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12Z" fill="currentColor" />
+                            <path d="M6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z" fill="currentColor" />
+                            <path
+                                d="M21.8 11.53L18.35 9.56L15.77 12.14L18.35 14.72L21.8 12.75C22.19 12.53 22.19 11.75 21.8 11.53Z"
+                                fill="currentColor" />
+                        </svg>
+                        <div>
+                            <div class="store-text">GET IT ON</div>
+                            <div class="store-name">Google Play</div>
+                        </div>
+                    </a>
+                    <span class="store-coming-soon-badge">準備中</span>
+                </div>
+            </div>
+            <p class="cta-coming-soon-note">スマートフォンアプリは現在開発中です。リリースまでしばらくお待ちください。</p>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg width="36" height="36" viewBox="60 -60 680 720" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#C8D8C8;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M 160,530 C 270,590 720,530 440,280 C 560,180 450,90 375,115 C 245,145 255,440 405,535 C 480,585 482,635 488,660"
+                                fill="none" stroke="url(#footerLineGrad)" stroke-width="76" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <g transform="translate(238,512) rotate(-120)">
+                                <path d="M0,0 C35,-58 105,-58 145,0 C105,58 35,58 0,0 Z" fill="#7CB342" />
+                            </g>
+                        </svg>
+                        <span>Branch</span>
+                    </div>
+                    <p>グループ収益を、即座に分配</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>プロダクト</h4>
+                        <a href="#features">特徴</a>
+                        <a href="#how-it-works">使い方</a>
+                        <a href="#use-cases">活用例</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>サポート</h4>
+                        <a href="#faq">FAQ</a>
+                        <a href="contact.html">お問い合わせ・開発者への提案</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>運営者</h4>
+                        <a href="terms.html">利用規約</a>
+                        <a href="privacy.html">プライバシーポリシー</a>
+                        <a href="#" id="tokushoho-link"
+                            onclick="document.getElementById('tokushoho-modal').style.display='flex'; return false;">特定商取引法に基づく表示</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <nav class="footer-bottom-nav">
+                    <a href="contact.html" id="contact-footer-link">お問い合わせ・開発者への提案</a>
+                    <a href="terms.html">利用規約</a>
+                    <a href="privacy.html">プライバシーポリシー</a>
+                    <a href="#"
+                        onclick="document.getElementById('tokushoho-modal').style.display='flex'; return false;">特定商取引法に基づく表示</a>
+                    <a href="#"
+                        onclick="document.getElementById('complaint-modal').style.display='flex'; return false;">苦情・ご意見</a>
+                </nav>
+                <p class="footer-copyright">&copy; 2026 Branch. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 特定商取引法に基づく表示モーダル -->
+    <div id="tokushoho-modal"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:9999; align-items:center; justify-content:center; padding: 20px; box-sizing:border-box;"
+        onclick="if(event.target===this)this.style.display='none'">
+        <div
+            style="background:#fff; border-radius:16px; padding:40px; max-width:640px; width:100%; max-height:90vh; overflow-y:auto; position:relative; box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+            <button onclick="document.getElementById('tokushoho-modal').style.display='none'"
+                style="position:absolute; top:16px; right:20px; background:none; border:none; font-size:24px; cursor:pointer; color:#666; line-height:1;">&times;</button>
+            <h2
+                style="font-size:1.4rem; font-weight:700; margin-bottom:24px; color:#1a1a2e; border-bottom:2px solid #f0f0f0; padding-bottom:16px;">
+                特定商取引法に基づく表示</h2>
+            <table style="width:100%; border-collapse:collapse; font-size:0.92rem; line-height:1.7;">
+                <tbody>
+                    <tr style="border-bottom:1px solid #f0f0f0;">
+                        <th
+                            style="padding:12px 16px 12px 0; text-align:left; white-space:nowrap; color:#555; font-weight:600; vertical-align:top; width:40%;">
+                            販売者名</th>
+                        <td style="padding:12px 0;">船戸 数</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid #f0f0f0;">
+                        <th
+                            style="padding:12px 16px 12px 0; text-align:left; color:#555; font-weight:600; vertical-align:top;">
+                            屋号</th>
+                        <td style="padding:12px 0;">Branch</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid #f0f0f0;">
+                        <th
+                            style="padding:12px 16px 12px 0; text-align:left; color:#555; font-weight:600; vertical-align:top;">
+                            所在地</th>
+                        <td style="padding:12px 0;">京都府京都市左京区吉田泉殿町41</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid #f0f0f0;">
+                        <th
+                            style="padding:12px 16px 12px 0; text-align:left; color:#555; font-weight:600; vertical-align:top;">
+                            電話番号</th>
+                        <td style="padding:12px 0;">08078035972</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid #f0f0f0;">
+                        <th
+                            style="padding:12px 16px 12px 0; text-align:left; color:#555; font-weight:600; vertical-align:top;">
+                            メールアドレス</th>
+                        <td style="padding:12px 0;">jasperkazunew190727@gmail.com</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid #f0f0f0;">
+                        <th
+                            style="padding:12px 16px 12px 0; text-align:left; color:#555; font-weight:600; vertical-align:top;">
+                            販売価格</th>
+                        <td style="padding:12px 0;">各サービスの申込画面にてご確認ください。</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid #f0f0f0;">
+                        <th
+                            style="padding:12px 16px 12px 0; text-align:left; color:#555; font-weight:600; vertical-align:top;">
+                            支払方法</th>
+                        <td style="padding:12px 0;">クレジットカード</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid #f0f0f0;">
+                        <th
+                            style="padding:12px 16px 12px 0; text-align:left; color:#555; font-weight:600; vertical-align:top;">
+                            支払時期</th>
+                        <td style="padding:12px 0;">サービス申込時にお支払いいただきます。</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid #f0f0f0;">
+                        <th
+                            style="padding:12px 16px 12px 0; text-align:left; color:#555; font-weight:600; vertical-align:top;">
+                            サービス提供時期</th>
+                        <td style="padding:12px 0;">申込完了後、即時にサービスをご利用いただけます。</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid #f0f0f0;">
+                        <th
+                            style="padding:12px 16px 12px 0; text-align:left; color:#555; font-weight:600; vertical-align:top;">
+                            返金・キャンセル</th>
+                        <td style="padding:12px 0;">
+                            デジタルコンテンツの性質上、サービス提供開始後の返金・キャンセルはお受けできません。ただし、サービスに重大な瑕疵がある場合はこの限りではありません。</td>
+                    </tr>
+                    <tr>
+                        <th
+                            style="padding:12px 16px 12px 0; text-align:left; color:#555; font-weight:600; vertical-align:top;">
+                            動作環境</th>
+                        <td style="padding:12px 0;">iOS 15以上 / Android 10以上<br>インターネット接続環境が必要です。</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 個人情報保護方針モーダル -->
+    <div id="privacy-modal"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:9999; align-items:center; justify-content:center; padding:20px; box-sizing:border-box;"
+        onclick="if(event.target===this)this.style.display='none'">
+        <div
+            style="background:#fff; border-radius:16px; padding:40px; max-width:640px; width:100%; max-height:90vh; overflow-y:auto; position:relative; box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+            <button onclick="document.getElementById('privacy-modal').style.display='none'"
+                style="position:absolute; top:16px; right:20px; background:none; border:none; font-size:24px; cursor:pointer; color:#666; line-height:1;">&times;</button>
+            <h2 style="font-size:1.4rem; font-weight:700; margin-bottom:8px; color:#1a1a2e;">個人情報保護方針</h2>
+            <p
+                style="font-size:0.85rem; color:#888; margin-bottom:24px; border-bottom:2px solid #f0f0f0; padding-bottom:16px;">
+                最終更新日：2026年3月</p>
+
+            <h3 style="font-size:1rem; font-weight:700; margin:20px 0 8px; color:#333;">1. 事業者情報</h3>
+            <p style="font-size:0.92rem; line-height:1.8; color:#444;">
+                屋号：Branch（個人事業主）<br>本方針は、Branchが提供するサービスにおける個人情報の取り扱いについて定めるものです。</p>
+
+            <h3 style="font-size:1rem; font-weight:700; margin:20px 0 8px; color:#333;">2. 取得する個人情報</h3>
+            <ul style="font-size:0.92rem; line-height:1.8; color:#444; padding-left:20px;">
+                <li>氏名・メールアドレス等の登録情報</li>
+                <li>銀行口座情報（Stripe経由で管理）</li>
+                <li>取引履歴・決済情報</li>
+                <li>アプリの利用ログ・端末情報</li>
+            </ul>
+
+            <h3 style="font-size:1rem; font-weight:700; margin:20px 0 8px; color:#333;">3. 利用目的</h3>
+            <ul style="font-size:0.92rem; line-height:1.8; color:#444; padding-left:20px;">
+                <li>サービスの提供・運営・改善</li>
+                <li>収益分配処理・本人確認</li>
+                <li>お問い合わせへの対応</li>
+                <li>法令に基づく対応</li>
+            </ul>
+
+            <h3 style="font-size:1rem; font-weight:700; margin:20px 0 8px; color:#333;">4. 第三者提供</h3>
+            <p style="font-size:0.92rem; line-height:1.8; color:#444;">
+                法令に基づく場合、または決済処理のためStripeへのデータ提供を除き、事前の同意なく第三者に個人情報を提供しません。</p>
+
+            <h3 style="font-size:1rem; font-weight:700; margin:20px 0 8px; color:#333;">5. 安全管理</h3>
+            <p style="font-size:0.92rem; line-height:1.8; color:#444;">個人情報への不正アクセス・紛失・破損・改ざん・漏洩防止のため、適切なセキュリティ対策を実施します。
+            </p>
+
+            <h3 style="font-size:1rem; font-weight:700; margin:20px 0 8px; color:#333;">6. 開示・訂正・削除</h3>
+            <p style="font-size:0.92rem; line-height:1.8; color:#444;">
+                ご本人からの個人情報の開示・訂正・削除・利用停止のご請求には、合理的な期間内に対応いたします。お問い合わせ窓口までご連絡ください。</p>
+
+            <h3 style="font-size:1rem; font-weight:700; margin:20px 0 8px; color:#333;">7. Cookieの利用</h3>
+            <p style="font-size:0.92rem; line-height:1.8; color:#444;">
+                当サービスではサービス改善・分析のためCookieを使用します。ブラウザの設定により無効化することができます。</p>
+
+            <h3 style="font-size:1rem; font-weight:700; margin:20px 0 8px; color:#333;">8. お問い合わせ</h3>
+            <p style="font-size:0.92rem; line-height:1.8; color:#444;">個人情報に関するお問い合わせは、フッターのお問い合わせ窓口よりご連絡ください。</p>
+        </div>
+    </div>
+
+    <!-- 苦情・ご意見モーダル -->
+    <div id="complaint-modal"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:9999; align-items:center; justify-content:center; padding:20px; box-sizing:border-box;"
+        onclick="if(event.target===this)this.style.display='none'">
+        <div
+            style="background:#fff; border-radius:16px; padding:40px; max-width:560px; width:100%; max-height:90vh; overflow-y:auto; position:relative; box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+            <button onclick="document.getElementById('complaint-modal').style.display='none'"
+                style="position:absolute; top:16px; right:20px; background:none; border:none; font-size:24px; cursor:pointer; color:#666; line-height:1;">&times;</button>
+            <h2 style="font-size:1.4rem; font-weight:700; margin-bottom:8px; color:#1a1a2e;">苦情・ご意見</h2>
+            <p
+                style="font-size:0.92rem; color:#555; margin-bottom:24px; border-bottom:2px solid #f0f0f0; padding-bottom:16px; line-height:1.7;">
+                サービスに関するご不満・苦情・ご意見がございましたら、以下の窓口までお知らせください。誠実に対応いたします。</p>
+
+            <div style="background:#F1F8E9; border-radius:12px; padding:24px; margin-bottom:24px;">
+                <h3 style="font-size:1rem; font-weight:700; margin-bottom:12px; color:#3a3a3a;">📬 受付窓口</h3>
+                <p style="font-size:0.92rem; line-height:1.8; color:#444;">
+                    メールアドレス：<strong>jasperkazunew190727@gmail.com</strong><br>受付時間：平日 10:00〜18:00<br>回答期間：原則5営業日以内</p>
+            </div>
+
+            <h3 style="font-size:1rem; font-weight:700; margin:0 0 12px; color:#333;">対応の流れ</h3>
+            <ol style="font-size:0.92rem; line-height:1.8; color:#444; padding-left:20px;">
+                <li>メールにてお問い合わせ内容をお送りください</li>
+                <li>受付確認のご連絡をいたします</li>
+                <li>内容を確認し、5営業日以内に回答いたします</li>
+                <li>必要に応じて、追加のやり取りを行います</li>
+            </ol>
+
+            <p style="font-size:0.85rem; color:#888; margin-top:20px; padding-top:16px; border-top:1px solid #f0f0f0;">※
+                解決に至らない場合は、消費生活センター等の公的機関へご相談いただくことも可能です。</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
