@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>個人情報保護方針 | Branch</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Serif+Display&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Serif+Display&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
   <style>
     :root {
       --bg: #F4F7FA;
@@ -24,9 +27,15 @@
       --text-sub: #4a5568;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: 'Noto Sans JP', sans-serif;
@@ -102,7 +111,7 @@
       right: -10%;
       width: 500px;
       height: 500px;
-      background: radial-gradient(circle, rgba(156,204,101,0.12) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(156, 204, 101, 0.12) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -113,7 +122,7 @@
       left: 40%;
       width: 300px;
       height: 300px;
-      background: radial-gradient(circle, rgba(61,90,128,0.4) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(61, 90, 128, 0.4) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -155,7 +164,7 @@
 
     .hero-sub {
       font-size: 14px;
-      color: rgba(255,255,255,0.6);
+      color: rgba(255, 255, 255, 0.6);
       font-weight: 300;
     }
 
@@ -260,7 +269,7 @@
     }
 
     .section:hover {
-      box-shadow: 0 4px 24px rgba(26,35,50,0.06);
+      box-shadow: 0 4px 24px rgba(26, 35, 50, 0.06);
     }
 
     .section-header {
@@ -485,8 +494,8 @@
     }
 
     .contact-item {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 8px;
       padding: 14px 18px;
     }
@@ -502,20 +511,20 @@
 
     .contact-item-value {
       font-size: 13px;
-      color: rgba(255,255,255,0.85);
+      color: rgba(255, 255, 255, 0.85);
       line-height: 1.6;
     }
 
     .contact-item-value a {
-      color: rgba(255,255,255,0.85);
+      color: rgba(255, 255, 255, 0.85);
       text-decoration: none;
-      border-bottom: 1px solid rgba(255,255,255,0.3);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     /* Footer */
     footer {
       background: var(--navy);
-      color: rgba(255,255,255,0.5);
+      color: rgba(255, 255, 255, 0.5);
       text-align: center;
       padding: 32px;
       font-size: 12px;
@@ -523,7 +532,7 @@
     }
 
     footer strong {
-      color: rgba(255,255,255,0.8);
+      color: rgba(255, 255, 255, 0.8);
     }
 
     /* Responsive */
@@ -556,454 +565,489 @@
     }
   </style>
 </head>
+
 <body>
 
-<!-- Header -->
-<header>
-  <div class="header-inner">
-    <a href="index.html" class="logo">
-      <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100" height="100" rx="22" fill="#F4F7FA"/>
-        <path d="M20 80 C30 60, 50 30, 80 20" stroke="url(#g)" stroke-width="14" stroke-linecap="round" fill="none"/>
-        <path d="M55 48 C62 38, 72 34, 78 28" stroke="#9CCC65" stroke-width="8" stroke-linecap="round" fill="none"/>
-        <defs>
-          <linearGradient id="g" x1="20" y1="80" x2="80" y2="20" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stop-color="#1a2332"/>
-            <stop offset="100%" stop-color="#6b7a8d"/>
-          </linearGradient>
-        </defs>
-      </svg>
-      <span class="logo-text">Branch</span>
-    </a>
-    <span class="header-badge">Privacy Policy</span>
-  </div>
-</header>
-
-<!-- Hero -->
-<div class="hero">
-  <div class="hero-inner">
-    <div class="hero-eyebrow">Legal</div>
-    <h1>個人情報保護方針</h1>
-    <p class="hero-sub">Privacy Policy &nbsp;·&nbsp; 制定日:2026年  月  日 &nbsp;·&nbsp; 最終更新:2026年  月  日</p>
-  </div>
-</div>
-
-<!-- Main Layout -->
-<div class="layout">
-
-  <!-- Sidebar TOC -->
-  <aside class="toc">
-    <div class="toc-label">目次</div>
-    <ul class="toc-list">
-      <li><a href="#sec1">第1条 事業者情報</a></li>
-      <li><a href="#sec2">第2条 取得する個人情報</a></li>
-      <li><a href="#sec3">第3条 利用目的</a></li>
-      <li><a href="#sec4">第4条 第三者提供</a></li>
-      <li><a href="#sec5">第5条 越境移転</a></li>
-      <li><a href="#sec6">第6条 安全管理措置</a></li>
-      <li><a href="#sec7">第7条 保存期間</a></li>
-      <li><a href="#sec8">第8条 ユーザーの権利</a></li>
-      <li><a href="#sec9">第9条 情報収集モジュール</a></li>
-      <li><a href="#sec10">第10条 未成年者</a></li>
-      <li><a href="#sec11">第11条 ポリシーの変更</a></li>
-      <li><a href="#sec12">第12条 お問い合わせ</a></li>
-    </ul>
-    <div class="toc-meta">
-      <strong>準拠法令</strong>
-      個人情報の保護に関する法律(個人情報保護法)・同施行令・同ガイドライン、および関連規定に基づき作成しています。
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="22" fill="#F4F7FA" />
+          <path d="M20 80 C30 60, 50 30, 80 20" stroke="url(#g)" stroke-width="14" stroke-linecap="round" fill="none" />
+          <path d="M55 48 C62 38, 72 34, 78 28" stroke="#9CCC65" stroke-width="8" stroke-linecap="round" fill="none" />
+          <defs>
+            <linearGradient id="g" x1="20" y1="80" x2="80" y2="20" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#1a2332" />
+              <stop offset="100%" stop-color="#6b7a8d" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">Branch</span>
+      </a>
+      <span class="header-badge">Privacy Policy</span>
     </div>
-  </aside>
+  </header>
 
-  <!-- Content -->
-  <main class="content">
-
-    <div class="intro-card">
-      Branch(以下「本サービス」)を運営する当社(以下「当社」)は、ユーザーの個人情報の保護を重要な責務と認識し、個人情報の保護に関する法律(以下「個人情報保護法」)をはじめとする関連法令を遵守し、以下のプライバシーポリシー(以下「本ポリシー」)に従い、適切な取り扱いを行います。
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Legal</div>
+      <h1>個人情報保護方針</h1>
+      <p class="hero-sub">Privacy Policy &nbsp;·&nbsp; 制定日:2026年3月6日 &nbsp;·&nbsp; 最終更新:2026年3月6日</p>
     </div>
+  </div>
 
-    <article>
+  <!-- Main Layout -->
+  <div class="layout">
 
-      <!-- 第1条 -->
-      <section class="section" id="sec1">
-        <div class="section-header">
-          <span class="section-number">第1条</span>
-          <h2 class="section-title">事業者情報</h2>
-        </div>
-        <div class="section-body">
-          <table class="info-table">
-            <tr><th>サービス名</th><td>Branch(ブランチ)</td></tr>
-            <tr><th>事業者名・代表者</th><td>船戸数(個人事業主)</td></tr>
-            <tr><th>所在地</th><td>京都府京都市左京区吉田泉殿町41 キャッスル21 305号室</td></tr>
-            <tr><th>お問い合わせ窓口</th><td><a href="mailto:jasperkazunew190727@gmail.com" style="color:var(--accent)">jasperkazunew190727@gmail.com</a></td></tr>
-            <tr><th>個人情報管理責任者</th><td>船戸数</td></tr>
-          </table>
-        </div>
-      </section>
+    <!-- Sidebar TOC -->
+    <aside class="toc">
+      <div class="toc-label">目次</div>
+      <ul class="toc-list">
+        <li><a href="#sec1">第1条 事業者情報</a></li>
+        <li><a href="#sec2">第2条 取得する個人情報</a></li>
+        <li><a href="#sec3">第3条 利用目的</a></li>
+        <li><a href="#sec4">第4条 第三者提供</a></li>
+        <li><a href="#sec5">第5条 越境移転</a></li>
+        <li><a href="#sec6">第6条 安全管理措置</a></li>
+        <li><a href="#sec7">第7条 保存期間</a></li>
+        <li><a href="#sec8">第8条 ユーザーの権利</a></li>
+        <li><a href="#sec9">第9条 情報収集モジュール</a></li>
+        <li><a href="#sec10">第10条 未成年者</a></li>
+        <li><a href="#sec11">第11条 ポリシーの変更</a></li>
+        <li><a href="#sec12">第12条 お問い合わせ</a></li>
+      </ul>
+      <div class="toc-meta">
+        <strong>準拠法令</strong>
+        個人情報の保護に関する法律(個人情報保護法)・同施行令・同ガイドライン、および関連規定に基づき作成しています。
+      </div>
+    </aside>
 
-      <!-- 第2条 -->
-      <section class="section" id="sec2">
-        <div class="section-header">
-          <span class="section-number">第2条</span>
-          <h2 class="section-title">取得する個人情報の種類</h2>
-        </div>
-        <div class="section-body">
-          <p>当社は、本サービスの提供にあたり、以下の個人情報を取得します。</p>
+    <!-- Content -->
+    <main class="content">
 
-          <div class="sub-heading">(1) アカウント登録時</div>
-          <ul class="policy-list">
-            <li>氏名(ふりがなを含む)</li>
-            <li>メールアドレス</li>
-            <li>パスワード(ハッシュ化して保存)</li>
-            <li>プロフィール画像(任意)</li>
-          </ul>
+      <div class="intro-card">
+        Branch(以下「本サービス」)を運営する当社(以下「当社」)は、ユーザーの個人情報の保護を重要な責務と認識し、個人情報の保護に関する法律(以下「個人情報保護法」)をはじめとする関連法令を遵守し、以下のプライバシーポリシー(以下「本ポリシー」)に従い、適切な取り扱いを行います。
+      </div>
 
-          <div class="sub-heading">(2) Stripe Connect 連携・本人確認時</div>
-          <p>Stripe Connect(Expressアカウント)の利用登録の際、決済事業者Stripe, Inc.(米国)の求めに応じ、以下の情報を提供いただく場合があります。当該情報はStripeのプライバシーポリシーに従い、Stripeにより管理されます(詳細は第5条をご参照ください)。</p>
-          <ul class="policy-list">
-            <li>氏名・生年月日・住所(本人確認目的)</li>
-            <li>銀行口座情報(出金先の登録)</li>
-            <li>マイナンバーカード・運転免許証等の本人確認書類</li>
-            <li>電話番号</li>
-          </ul>
+      <article>
 
-          <div class="sub-heading">(3) サービス利用時</div>
-          <ul class="policy-list">
-            <li>プロジェクト・グループの作成・参加に関する情報</li>
-            <li>売上・分配・費用・報酬に関する取引データ</li>
-            <li>タスクの作成・完了・承認に関する操作ログ</li>
-            <li>承認・拒否・リコール操作の履歴(操作者・操作日時・対象申請の内容を含む)</li>
-            <li>アプリ内でのコメント・コミュニケーション内容</li>
-          </ul>
-
-          <div class="sub-heading">(4) 自動的に取得する情報</div>
-          <ul class="policy-list">
-            <li>IPアドレス・デバイス情報・OSバージョン</li>
-            <li>アクセスログ・操作ログ</li>
-            <li>プッシュ通知トークン(通知配信に必要な識別子)</li>
-            <li>エラー情報・クラッシュログ・パフォーマンス情報(障害解析目的)</li>
-          </ul>
-
-          <div class="sub-heading">(5) Cookie その他のトラッキング技術</div>
-          <p>当社は、サービス改善および利用状況の分析のため、Cookieその他のトラッキング技術を利用することがあります。これらは特定の個人を直接識別するものではありません。将来的にWeb版を提供する際は、Cookieの利用目的・種別・オプトアウト方法について本ポリシー上で別途明示します。</p>
-        </div>
-      </section>
-
-      <!-- 第3条 -->
-      <section class="section" id="sec3">
-        <div class="section-header">
-          <span class="section-number">第3条</span>
-          <h2 class="section-title">個人情報の利用目的</h2>
-        </div>
-        <div class="section-body">
-          <p>当社は、取得した個人情報を以下の目的のために利用します。</p>
-          <ul class="policy-list">
-            <li>本サービスのアカウント登録・認証・管理</li>
-            <li>売上の自動分配処理・精算処理の実行</li>
-            <li>Stripe Connectを通じた決済・送金・出金処理</li>
-            <li>本人確認および不正利用防止のためのKYC(顧客確認)</li>
-            <li>サービスに関するお知らせ・重要なシステム通知の送信</li>
-            <li>ユーザーサポートおよびお問い合わせへの対応</li>
-            <li>サービス品質の向上・機能改善のための統計的分析</li>
-            <li>利用規約違反の調査・対応</li>
-            <li>法令に基づく義務の履行</li>
-          </ul>
-          <p>当社は、上記の利用目的の範囲を超えて個人情報を利用することはありません。利用目的を変更する場合は、変更前の利用目的と関連性が合理的に認められる範囲に限定し、変更後の利用目的をユーザーに通知または公表します。</p>
-        </div>
-      </section>
-
-      <!-- 第4条 -->
-      <section class="section" id="sec4">
-        <div class="section-header">
-          <span class="section-number">第4条</span>
-          <h2 class="section-title">個人情報の第三者提供</h2>
-        </div>
-        <div class="section-body">
-          <p>当社は、以下の場合を除き、ユーザーの同意なく個人情報を第三者に提供することはありません。</p>
-          <ul class="policy-list">
-            <li>ユーザーの同意がある場合</li>
-            <li>法令に基づく場合(裁判所・警察等からの適法な要請を含む)</li>
-            <li>人の生命・身体・財産の保護のために必要であり、ユーザーの同意を得ることが困難な場合</li>
-            <li>国の機関・地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合</li>
-            <li>決済・インフラ等の業務委託先への提供(下記参照)</li>
-          </ul>
-
-          <div class="sub-heading">業務委託先への提供</div>
-          <p>当社は、サービス提供に必要な範囲で、以下の外部事業者に個人情報を取り扱わせることがあります。</p>
-
-          <div class="notice-box">
-            <strong>※決済情報の取り扱いについて</strong><br>
-            決済処理はStripe, Inc.が提供する決済サービスを利用しています。クレジットカード情報等の決済情報は当サービスでは保有せず、Stripeのシステムにより安全に処理されます。
+        <!-- 第1条 -->
+        <section class="section" id="sec1">
+          <div class="section-header">
+            <span class="section-number">第1条</span>
+            <h2 class="section-title">事業者情報</h2>
           </div>
-          <table class="provider-table">
-            <thead>
+          <div class="section-body">
+            <table class="info-table">
               <tr>
-                <th>事業者・サービス名</th>
-                <th>主な利用目的</th>
-                <th>取り扱う情報の例</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Stripe, Inc.</td>
-                <td>決済処理、返金処理、本人確認・口座関連手続(Stripe Connect)</td>
-                <td>氏名、メールアドレス、決済関連情報、取引情報</td>
+                <th>サービス名</th>
+                <td>Branch(ブランチ)</td>
               </tr>
               <tr>
-                <td>Supabase, Inc.</td>
-                <td>認証、データベース・ストレージ運用</td>
-                <td>アカウント情報、取引データ、アップロードデータ</td>
+                <th>事業者名・代表者</th>
+                <td>船戸数(個人事業主)</td>
               </tr>
               <tr>
-                <td>Functional Software, Inc.(Sentry)</td>
-                <td>エラー監視、障害解析、パフォーマンス監視</td>
-                <td>エラー情報、端末・アプリ情報、利用状況に関する技術情報</td>
+                <th>所在地</th>
+                <td>京都府京都市左京区吉田泉殿町41 キャッスル21 305号室</td>
               </tr>
               <tr>
-                <td>Expo Application Services</td>
-                <td>プッシュ通知配信、アプリ配布運用</td>
-                <td>プッシュトークン、通知配信に必要な情報、ビルド運用情報</td>
+                <th>お問い合わせ窓口</th>
+                <td><a href="mailto:jasperkazunew190727@gmail.com"
+                    style="color:var(--accent)">jasperkazunew190727@gmail.com</a></td>
               </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+              <tr>
+                <th>個人情報管理責任者</th>
+                <td>船戸数</td>
+              </tr>
+            </table>
+          </div>
+        </section>
 
-      <!-- 第5条 -->
-      <section class="section" id="sec5">
-        <div class="section-header">
-          <span class="section-number">第5条</span>
-          <h2 class="section-title">外国にある第三者への個人情報の提供(越境移転)</h2>
-        </div>
-        <div class="section-body">
-          <p>当社は、上記外部事業者の提供するクラウドサービスを利用するにあたり、個人情報を外国(主に米国)に所在するサーバーで取り扱う場合があります。当社は、個人情報保護法に基づく外国第三者提供の手続き等に従い、必要かつ適切な安全管理措置を講じたうえで取り扱います。</p>
-          <table class="provider-table" style="margin-top:16px">
-            <thead>
-              <tr>
-                <th>提供先</th>
-                <th>所在国</th>
-                <th>提供する情報</th>
-                <th>講じる保護措置</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Stripe, Inc.</td>
-                <td>米国</td>
-                <td>氏名・銀行口座・本人確認書類</td>
-                <td>OECDプライバシーガイドライン8原則に対応する措置 / Stripe Privacy Policy準拠</td>
-              </tr>
-              <tr>
-                <td>Supabase, Inc.</td>
-                <td>米国</td>
-                <td>アカウント情報・取引データ</td>
-                <td>OECDプライバシーガイドライン8原則に対応する措置 / Supabase Privacy Policy準拠</td>
-              </tr>
-              <tr>
-                <td>Functional Software, Inc.(Sentry)</td>
-                <td>米国</td>
-                <td>エラー情報・端末・アプリ情報</td>
-                <td>OECDプライバシーガイドライン8原則に対応する措置 / Sentry Privacy Policy準拠</td>
-              </tr>
-              <tr>
-                <td>Expo Application Services</td>
-                <td>米国</td>
-                <td>プッシュトークン・通知配信情報</td>
-                <td>OECDプライバシーガイドライン8原則に対応する措置 / Expo Privacy Policy準拠</td>
-              </tr>
-            </tbody>
-          </table>
-          <p style="margin-top:12px; font-size:12px; color:var(--gray)">
-            各国の個人情報保護制度についての情報は、<a href="https://www.ppc.go.jp/" target="_blank" style="color:var(--accent)">個人情報保護委員会のウェブサイト</a>をご参照ください。<br>
-            ※ Stripe: <a href="https://stripe.com/jp/privacy" target="_blank" style="color:var(--accent)">https://stripe.com/jp/privacy</a>、
-            ※ Supabase: <a href="https://supabase.com/privacy" target="_blank" style="color:var(--accent)">https://supabase.com/privacy</a><br>
-            ※ Sentry: <a href="https://sentry.io/privacy/" target="_blank" style="color:var(--accent)">https://sentry.io/privacy/</a>、
-            ※ Expo: <a href="https://expo.dev/privacy" target="_blank" style="color:var(--accent)">https://expo.dev/privacy</a>
-          </p>
-        </div>
-      </section>
+        <!-- 第2条 -->
+        <section class="section" id="sec2">
+          <div class="section-header">
+            <span class="section-number">第2条</span>
+            <h2 class="section-title">取得する個人情報の種類</h2>
+          </div>
+          <div class="section-body">
+            <p>当社は、本サービスの提供にあたり、以下の個人情報を取得します。</p>
 
-      <!-- 第6条 -->
-      <section class="section" id="sec6">
-        <div class="section-header">
-          <span class="section-number">第6条</span>
-          <h2 class="section-title">個人情報の安全管理措置</h2>
-        </div>
-        <div class="section-body">
-          <p>当社は、取得した個人情報の漏えい・滅失・毀損を防止するため、以下の安全管理措置を講じます。</p>
-          <ul class="policy-list">
-            <li>通信の暗号化(TLS/SSL)による安全な通信の確保</li>
-            <li>データベースへのアクセス制限・Row Level Security(RLS)の実施</li>
-            <li>パスワードのハッシュ化処理</li>
-            <li>本人確認情報(KYC)のStripeへの直接送信(当社サーバーを経由しない設計)</li>
-            <li>不正アクセス検知・ログ監視の実施</li>
-            <li>従業員への個人情報保護に関する教育・研修</li>
-          </ul>
-          <p>当社は、合理的な安全管理措置を講じますが、インターネット通信の性質上、完全な安全性を保証するものではありません。不正アクセス・情報漏えい等が発生した場合は、速やかに対処し、法令に基づきユーザーへの通知・公表を行います。</p>
-        </div>
-      </section>
+            <div class="sub-heading">(1) アカウント登録時</div>
+            <ul class="policy-list">
+              <li>氏名(ふりがなを含む)</li>
+              <li>メールアドレス</li>
+              <li>パスワード(ハッシュ化して保存)</li>
+              <li>プロフィール画像(任意)</li>
+            </ul>
 
-      <!-- 第7条 -->
-      <section class="section" id="sec7">
-        <div class="section-header">
-          <span class="section-number">第7条</span>
-          <h2 class="section-title">個人情報の保存期間</h2>
-        </div>
-        <div class="section-body">
-          <p>当社は、以下の基準に従い個人情報を保存します。</p>
-          <table class="retention-table">
-            <thead>
-              <tr>
-                <th>情報の種類</th>
-                <th>保存期間</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>アカウント情報</td>
-                <td>退会後3年間(法令上の義務を除く)</td>
-              </tr>
-              <tr>
-                <td>取引・分配データ</td>
-                <td>取引完了後7年間(税務上の法定保存期間)</td>
-              </tr>
-              <tr>
-                <td>承認・操作ログ</td>
-                <td>プロジェクト完了後7年間(取引記録の法定保存期間に準拠)</td>
-              </tr>
-              <tr>
-                <td>アクセスログ</td>
-                <td>取得後1年間</td>
-              </tr>
-              <tr>
-                <td>本人確認書類(KYC)</td>
-                <td>Stripeの規約に準拠(当社は原則保存しない)</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+            <div class="sub-heading">(2) Stripe Connect 連携・本人確認時</div>
+            <p>Stripe Connect(Expressアカウント)の利用登録の際、決済事業者Stripe,
+              Inc.(米国)の求めに応じ、以下の情報を提供いただく場合があります。当該情報はStripeのプライバシーポリシーに従い、Stripeにより管理されます(詳細は第5条をご参照ください)。</p>
+            <ul class="policy-list">
+              <li>氏名・生年月日・住所(本人確認目的)</li>
+              <li>銀行口座情報(出金先の登録)</li>
+              <li>マイナンバーカード・運転免許証等の本人確認書類</li>
+              <li>電話番号</li>
+            </ul>
 
-      <!-- 第8条 -->
-      <section class="section" id="sec8">
-        <div class="section-header">
-          <span class="section-number">第8条</span>
-          <h2 class="section-title">ユーザーの権利・アカウント削除</h2>
-        </div>
-        <div class="section-body">
-          <p>ユーザーは、当社が保有する自己の個人情報について、個人情報保護法に基づき以下の権利を行使することができます。</p>
-          <ul class="policy-list">
-            <li>個人情報の開示を請求する権利</li>
-            <li>個人情報の訂正・追加・削除を請求する権利</li>
-            <li>個人情報の利用停止・消去を請求する権利</li>
-            <li>個人情報の第三者提供の停止を請求する権利</li>
-          </ul>
+            <div class="sub-heading">(3) サービス利用時</div>
+            <ul class="policy-list">
+              <li>プロジェクト・グループの作成・参加に関する情報</li>
+              <li>売上・分配・費用・報酬に関する取引データ</li>
+              <li>タスクの作成・完了・承認に関する操作ログ</li>
+              <li>承認・拒否・リコール操作の履歴(操作者・操作日時・対象申請の内容を含む)</li>
+              <li>アプリ内でのコメント・コミュニケーション内容</li>
+            </ul>
 
-          <div class="sub-heading">アカウントの削除(退会)</div>
-          <p>ユーザーは、本サービスのアプリ内設定画面にある「退会手続き」から、いつでもアカウントを削除し、利用契約を解約することができます。退会処理後、当社はユーザーの個人情報を第7条に定める期間内に適切に削除または匿名化します。ただし、法令の義務により一定期間保存が必要な情報(取引記録等)については、この限りではありません。</p>
-          <p>お問い合わせ窓口(第12条)へのご連絡によってもアカウント削除のご依頼を承ります。</p>
-        </div>
-      </section>
+            <div class="sub-heading">(4) 自動的に取得する情報</div>
+            <ul class="policy-list">
+              <li>IPアドレス・デバイス情報・OSバージョン</li>
+              <li>アクセスログ・操作ログ</li>
+              <li>プッシュ通知トークン(通知配信に必要な識別子)</li>
+              <li>エラー情報・クラッシュログ・パフォーマンス情報(障害解析目的)</li>
+            </ul>
 
-      <!-- 第9条 -->
-      <section class="section" id="sec9">
-        <div class="section-header">
-          <span class="section-number">第9条</span>
-          <h2 class="section-title">情報収集モジュール等の利用について</h2>
-        </div>
-        <div class="section-body">
-          <div class="sub-heading">(1) Cookieの利用について</div>
-          <p>当社のモバイルアプリでは、Webブラウザ向けCookieを前提とした情報取得は行っていません。今後Web機能を提供しCookieを利用する場合は、本ポリシーを更新します。</p>
+            <div class="sub-heading">(5) Cookie その他のトラッキング技術</div>
+            <p>
+              当社は、サービス改善および利用状況の分析のため、Cookieその他のトラッキング技術を利用することがあります。これらは特定の個人を直接識別するものではありません。将来的にWeb版を提供する際は、Cookieの利用目的・種別・オプトアウト方法について本ポリシー上で別途明示します。
+            </p>
+          </div>
+        </section>
 
-          <div class="sub-heading">(2) 情報収集モジュール等の利用について</div>
-          <p>当社は、サービス品質向上および障害対応のため、以下の情報収集モジュール等を利用することがあります。</p>
-          <table class="retention-table">
-            <thead>
-              <tr>
-                <th>モジュール名</th>
-                <th>提供者</th>
-                <th>取得目的・内容</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Sentry</td>
-                <td>Functional Software, Inc.(米国)</td>
-                <td>エラー監視・パフォーマンス監視・障害解析</td>
-              </tr>
-              <tr>
-                <td>Expo Push Notifications</td>
-                <td>Expo(米国)</td>
-                <td>プッシュ通知配信および配信状態管理</td>
-              </tr>
-            </tbody>
-          </table>
-          <p style="margin-top:12px">これらのモジュールにより収集される情報は、各事業者のプライバシーポリシーに基づき取り扱われます。取得を希望されない場合は、ご利用のデバイスの設定によりトラッキングを制限することができますが、サービスの一部機能が利用できなくなる場合があります。</p>
-        </div>
-      </section>
+        <!-- 第3条 -->
+        <section class="section" id="sec3">
+          <div class="section-header">
+            <span class="section-number">第3条</span>
+            <h2 class="section-title">個人情報の利用目的</h2>
+          </div>
+          <div class="section-body">
+            <p>当社は、取得した個人情報を以下の目的のために利用します。</p>
+            <ul class="policy-list">
+              <li>本サービスのアカウント登録・認証・管理</li>
+              <li>売上の自動分配処理・精算処理の実行</li>
+              <li>Stripe Connectを通じた決済・送金・出金処理</li>
+              <li>本人確認および不正利用防止のためのKYC(顧客確認)</li>
+              <li>サービスに関するお知らせ・重要なシステム通知の送信</li>
+              <li>ユーザーサポートおよびお問い合わせへの対応</li>
+              <li>サービス品質の向上・機能改善のための統計的分析</li>
+              <li>利用規約違反の調査・対応</li>
+              <li>法令に基づく義務の履行</li>
+            </ul>
+            <p>当社は、上記の利用目的の範囲を超えて個人情報を利用することはありません。利用目的を変更する場合は、変更前の利用目的と関連性が合理的に認められる範囲に限定し、変更後の利用目的をユーザーに通知または公表します。
+            </p>
+          </div>
+        </section>
 
-      <!-- 第10条 -->
-      <section class="section" id="sec10">
-        <div class="section-header">
-          <span class="section-number">第10条</span>
-          <h2 class="section-title">未成年者の個人情報</h2>
-        </div>
-        <div class="section-body">
-          <p>本サービスは、18歳未満の方のご利用を想定しておりません。18歳未満の方が本サービスに登録された場合、当社はその個人情報を速やかに削除する措置を講じます。</p>
-        </div>
-      </section>
+        <!-- 第4条 -->
+        <section class="section" id="sec4">
+          <div class="section-header">
+            <span class="section-number">第4条</span>
+            <h2 class="section-title">個人情報の第三者提供</h2>
+          </div>
+          <div class="section-body">
+            <p>当社は、以下の場合を除き、ユーザーの同意なく個人情報を第三者に提供することはありません。</p>
+            <ul class="policy-list">
+              <li>ユーザーの同意がある場合</li>
+              <li>法令に基づく場合(裁判所・警察等からの適法な要請を含む)</li>
+              <li>人の生命・身体・財産の保護のために必要であり、ユーザーの同意を得ることが困難な場合</li>
+              <li>国の機関・地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合</li>
+              <li>決済・インフラ等の業務委託先への提供(下記参照)</li>
+            </ul>
 
-      <!-- 第11条 -->
-      <section class="section" id="sec11">
-        <div class="section-header">
-          <span class="section-number">第11条</span>
-          <h2 class="section-title">プライバシーポリシーの変更</h2>
-        </div>
-        <div class="section-body">
-          <p>当社は、法令改正やサービス内容の変更に応じて、本ポリシーを改定することがあります。重要な変更がある場合は、アプリ内通知または当社Webサイト上で周知します。</p>
-        </div>
-      </section>
+            <div class="sub-heading">業務委託先への提供</div>
+            <p>当社は、サービス提供に必要な範囲で、以下の外部事業者に個人情報を取り扱わせることがあります。</p>
 
-      <!-- 第12条 -->
-      <section class="section" id="sec12" style="padding:0; overflow:hidden; border:none; background:transparent;">
-        <div class="contact-box">
-          <div class="contact-title">お問い合わせ窓口</div>
-          <p style="color:rgba(255,255,255,0.6); font-size:13px; margin-bottom:20px; line-height:1.8">
-            本ポリシーに関するお問い合わせ、個人情報の開示等のご請求、およびアカウント削除のご依頼は、以下の窓口までご連絡ください。
-          </p>
-          <div class="contact-grid">
-            <div class="contact-item">
-              <div class="contact-item-label">担当部署</div>
-              <div class="contact-item-value">個人情報管理責任者</div>
+            <div class="notice-box">
+              <strong>※決済情報の取り扱いについて</strong><br>
+              決済処理はStripe, Inc.が提供する決済サービスを利用しています。クレジットカード情報等の決済情報は当サービスでは保有せず、Stripeのシステムにより安全に処理されます。
             </div>
-            <div class="contact-item">
-              <div class="contact-item-label">メールアドレス</div>
-              <div class="contact-item-value">
-                <a href="mailto:jasperkazunew190727@gmail.com">jasperkazunew190727@gmail.com</a>
+            <table class="provider-table">
+              <thead>
+                <tr>
+                  <th>事業者・サービス名</th>
+                  <th>主な利用目的</th>
+                  <th>取り扱う情報の例</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Stripe, Inc.</td>
+                  <td>決済処理、返金処理、本人確認・口座関連手続(Stripe Connect)</td>
+                  <td>氏名、メールアドレス、決済関連情報、取引情報</td>
+                </tr>
+                <tr>
+                  <td>Supabase, Inc.</td>
+                  <td>認証、データベース・ストレージ運用</td>
+                  <td>アカウント情報、取引データ、アップロードデータ</td>
+                </tr>
+                <tr>
+                  <td>Functional Software, Inc.(Sentry)</td>
+                  <td>エラー監視、障害解析、パフォーマンス監視</td>
+                  <td>エラー情報、端末・アプリ情報、利用状況に関する技術情報</td>
+                </tr>
+                <tr>
+                  <td>Expo Application Services</td>
+                  <td>プッシュ通知配信、アプリ配布運用</td>
+                  <td>プッシュトークン、通知配信に必要な情報、ビルド運用情報</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 第5条 -->
+        <section class="section" id="sec5">
+          <div class="section-header">
+            <span class="section-number">第5条</span>
+            <h2 class="section-title">外国にある第三者への個人情報の提供(越境移転)</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              当社は、上記外部事業者の提供するクラウドサービスを利用するにあたり、個人情報を外国(主に米国)に所在するサーバーで取り扱う場合があります。当社は、個人情報保護法に基づく外国第三者提供の手続き等に従い、必要かつ適切な安全管理措置を講じたうえで取り扱います。
+            </p>
+            <table class="provider-table" style="margin-top:16px">
+              <thead>
+                <tr>
+                  <th>提供先</th>
+                  <th>所在国</th>
+                  <th>提供する情報</th>
+                  <th>講じる保護措置</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Stripe, Inc.</td>
+                  <td>米国</td>
+                  <td>氏名・銀行口座・本人確認書類</td>
+                  <td>OECDプライバシーガイドライン8原則に対応する措置 / Stripe Privacy Policy準拠</td>
+                </tr>
+                <tr>
+                  <td>Supabase, Inc.</td>
+                  <td>米国</td>
+                  <td>アカウント情報・取引データ</td>
+                  <td>OECDプライバシーガイドライン8原則に対応する措置 / Supabase Privacy Policy準拠</td>
+                </tr>
+                <tr>
+                  <td>Functional Software, Inc.(Sentry)</td>
+                  <td>米国</td>
+                  <td>エラー情報・端末・アプリ情報</td>
+                  <td>OECDプライバシーガイドライン8原則に対応する措置 / Sentry Privacy Policy準拠</td>
+                </tr>
+                <tr>
+                  <td>Expo Application Services</td>
+                  <td>米国</td>
+                  <td>プッシュトークン・通知配信情報</td>
+                  <td>OECDプライバシーガイドライン8原則に対応する措置 / Expo Privacy Policy準拠</td>
+                </tr>
+              </tbody>
+            </table>
+            <p style="margin-top:12px; font-size:12px; color:var(--gray)">
+              各国の個人情報保護制度についての情報は、<a href="https://www.ppc.go.jp/" target="_blank"
+                style="color:var(--accent)">個人情報保護委員会のウェブサイト</a>をご参照ください。<br>
+              ※ Stripe: <a href="https://stripe.com/jp/privacy" target="_blank"
+                style="color:var(--accent)">https://stripe.com/jp/privacy</a>、
+              ※ Supabase: <a href="https://supabase.com/privacy" target="_blank"
+                style="color:var(--accent)">https://supabase.com/privacy</a><br>
+              ※ Sentry: <a href="https://sentry.io/privacy/" target="_blank"
+                style="color:var(--accent)">https://sentry.io/privacy/</a>、
+              ※ Expo: <a href="https://expo.dev/privacy" target="_blank"
+                style="color:var(--accent)">https://expo.dev/privacy</a>
+            </p>
+          </div>
+        </section>
+
+        <!-- 第6条 -->
+        <section class="section" id="sec6">
+          <div class="section-header">
+            <span class="section-number">第6条</span>
+            <h2 class="section-title">個人情報の安全管理措置</h2>
+          </div>
+          <div class="section-body">
+            <p>当社は、取得した個人情報の漏えい・滅失・毀損を防止するため、以下の安全管理措置を講じます。</p>
+            <ul class="policy-list">
+              <li>通信の暗号化(TLS/SSL)による安全な通信の確保</li>
+              <li>データベースへのアクセス制限・Row Level Security(RLS)の実施</li>
+              <li>パスワードのハッシュ化処理</li>
+              <li>本人確認情報(KYC)のStripeへの直接送信(当社サーバーを経由しない設計)</li>
+              <li>不正アクセス検知・ログ監視の実施</li>
+              <li>従業員への個人情報保護に関する教育・研修</li>
+            </ul>
+            <p>
+              当社は、合理的な安全管理措置を講じますが、インターネット通信の性質上、完全な安全性を保証するものではありません。不正アクセス・情報漏えい等が発生した場合は、速やかに対処し、法令に基づきユーザーへの通知・公表を行います。
+            </p>
+          </div>
+        </section>
+
+        <!-- 第7条 -->
+        <section class="section" id="sec7">
+          <div class="section-header">
+            <span class="section-number">第7条</span>
+            <h2 class="section-title">個人情報の保存期間</h2>
+          </div>
+          <div class="section-body">
+            <p>当社は、以下の基準に従い個人情報を保存します。</p>
+            <table class="retention-table">
+              <thead>
+                <tr>
+                  <th>情報の種類</th>
+                  <th>保存期間</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>アカウント情報</td>
+                  <td>退会後3年間(法令上の義務を除く)</td>
+                </tr>
+                <tr>
+                  <td>取引・分配データ</td>
+                  <td>取引完了後7年間(税務上の法定保存期間)</td>
+                </tr>
+                <tr>
+                  <td>承認・操作ログ</td>
+                  <td>プロジェクト完了後7年間(取引記録の法定保存期間に準拠)</td>
+                </tr>
+                <tr>
+                  <td>アクセスログ</td>
+                  <td>取得後1年間</td>
+                </tr>
+                <tr>
+                  <td>本人確認書類(KYC)</td>
+                  <td>Stripeの規約に準拠(当社は原則保存しない)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 第8条 -->
+        <section class="section" id="sec8">
+          <div class="section-header">
+            <span class="section-number">第8条</span>
+            <h2 class="section-title">ユーザーの権利・アカウント削除</h2>
+          </div>
+          <div class="section-body">
+            <p>ユーザーは、当社が保有する自己の個人情報について、個人情報保護法に基づき以下の権利を行使することができます。</p>
+            <ul class="policy-list">
+              <li>個人情報の開示を請求する権利</li>
+              <li>個人情報の訂正・追加・削除を請求する権利</li>
+              <li>個人情報の利用停止・消去を請求する権利</li>
+              <li>個人情報の第三者提供の停止を請求する権利</li>
+            </ul>
+
+            <div class="sub-heading">アカウントの削除(退会)</div>
+            <p>
+              ユーザーは、本サービスのアプリ内設定画面にある「退会手続き」から、いつでもアカウントを削除し、利用契約を解約することができます。退会処理後、当社はユーザーの個人情報を第7条に定める期間内に適切に削除または匿名化します。ただし、法令の義務により一定期間保存が必要な情報(取引記録等)については、この限りではありません。
+            </p>
+            <p>お問い合わせ窓口(第12条)へのご連絡によってもアカウント削除のご依頼を承ります。</p>
+          </div>
+        </section>
+
+        <!-- 第9条 -->
+        <section class="section" id="sec9">
+          <div class="section-header">
+            <span class="section-number">第9条</span>
+            <h2 class="section-title">情報収集モジュール等の利用について</h2>
+          </div>
+          <div class="section-body">
+            <div class="sub-heading">(1) Cookieの利用について</div>
+            <p>当社のモバイルアプリでは、Webブラウザ向けCookieを前提とした情報取得は行っていません。今後Web機能を提供しCookieを利用する場合は、本ポリシーを更新します。</p>
+
+            <div class="sub-heading">(2) 情報収集モジュール等の利用について</div>
+            <p>当社は、サービス品質向上および障害対応のため、以下の情報収集モジュール等を利用することがあります。</p>
+            <table class="retention-table">
+              <thead>
+                <tr>
+                  <th>モジュール名</th>
+                  <th>提供者</th>
+                  <th>取得目的・内容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sentry</td>
+                  <td>Functional Software, Inc.(米国)</td>
+                  <td>エラー監視・パフォーマンス監視・障害解析</td>
+                </tr>
+                <tr>
+                  <td>Expo Push Notifications</td>
+                  <td>Expo(米国)</td>
+                  <td>プッシュ通知配信および配信状態管理</td>
+                </tr>
+              </tbody>
+            </table>
+            <p style="margin-top:12px">
+              これらのモジュールにより収集される情報は、各事業者のプライバシーポリシーに基づき取り扱われます。取得を希望されない場合は、ご利用のデバイスの設定によりトラッキングを制限することができますが、サービスの一部機能が利用できなくなる場合があります。
+            </p>
+          </div>
+        </section>
+
+        <!-- 第10条 -->
+        <section class="section" id="sec10">
+          <div class="section-header">
+            <span class="section-number">第10条</span>
+            <h2 class="section-title">未成年者の個人情報</h2>
+          </div>
+          <div class="section-body">
+            <p>本サービスは、18歳未満の方のご利用を想定しておりません。18歳未満の方が本サービスに登録された場合、当社はその個人情報を速やかに削除する措置を講じます。</p>
+          </div>
+        </section>
+
+        <!-- 第11条 -->
+        <section class="section" id="sec11">
+          <div class="section-header">
+            <span class="section-number">第11条</span>
+            <h2 class="section-title">プライバシーポリシーの変更</h2>
+          </div>
+          <div class="section-body">
+            <p>当社は、法令改正やサービス内容の変更に応じて、本ポリシーを改定することがあります。重要な変更がある場合は、アプリ内通知または当社Webサイト上で周知します。</p>
+          </div>
+        </section>
+
+        <!-- 第12条 -->
+        <section class="section" id="sec12" style="padding:0; overflow:hidden; border:none; background:transparent;">
+          <div class="contact-box">
+            <div class="contact-title">お問い合わせ窓口</div>
+            <p style="color:rgba(255,255,255,0.6); font-size:13px; margin-bottom:20px; line-height:1.8">
+              本ポリシーに関するお問い合わせ、個人情報の開示等のご請求、およびアカウント削除のご依頼は、以下の窓口までご連絡ください。
+            </p>
+            <div class="contact-grid">
+              <div class="contact-item">
+                <div class="contact-item-label">担当部署</div>
+                <div class="contact-item-value">個人情報管理責任者</div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-label">メールアドレス</div>
+                <div class="contact-item-value">
+                  <a href="mailto:jasperkazunew190727@gmail.com">jasperkazunew190727@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-label">受付時間</div>
+                <div class="contact-item-value">平日 10:00〜18:00<br>(土日祝・年末年始を除く)</div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-label">対応期間</div>
+                <div class="contact-item-value">ご連絡受領後、30日以内を目安に対応いたします</div>
               </div>
             </div>
-            <div class="contact-item">
-              <div class="contact-item-label">受付時間</div>
-              <div class="contact-item-value">平日 10:00〜18:00<br>(土日祝・年末年始を除く)</div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-label">対応期間</div>
-              <div class="contact-item-value">ご連絡受領後、30日以内を目安に対応いたします</div>
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-    </article>
+      </article>
 
-  </main>
-</div>
+    </main>
+  </div>
 
-<!-- Footer -->
-<footer>
-  <strong>Branch(ブランチ)</strong><br>
-  © 2026 船戸数. All rights reserved.<br>
-  <span style="font-size:11px">制定日:2026年  月  日</span>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <strong>Branch(ブランチ)</strong><br>
+    © 2026 船戸数. All rights reserved.<br>
+    <span style="font-size:11px">制定日:2026年 月 日</span>
+  </footer>
 
 </body>
+
 </html>
